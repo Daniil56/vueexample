@@ -52,8 +52,8 @@ export default {
         status: 'active',
         tags: this.chips.chipsData,
         date: this.date.date
-      }
-      this.$store.dispatch('createTask', task)
+      };
+      this.$store.dispatch('createTask', task);
       this.$router.push('/list')
     }
     },

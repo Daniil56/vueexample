@@ -17,11 +17,10 @@ export default new Router({
       name: 'list',
       component: () => import('./views/List.vue')
     },
-    {
-      path: '/task/:id',
-      name: 'task',
-      component: () => import('./views/Task.vue')
-    }
-
+      {
+          path: '/task/:id',
+          name: 'task',
+          component: () => import('./views/Task.vue')
+      }
   ]
 })

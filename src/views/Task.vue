@@ -5,9 +5,9 @@
 <script>
     export default {
         computed: {
-           task() {
-               return this.$store.getters.taskById()
-           }
+            task() {
+                return this.$store.getters.taskById(+this.$route.params.id)
+            }
         }
     }
 </script>
